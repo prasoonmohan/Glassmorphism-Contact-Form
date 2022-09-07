@@ -1,0 +1,40 @@
+$primary-color:rgba(0, 225, 255, 0.486);
+$main-form:rgba(17, 0, 255, 0.749);
+$sub-form:rgba(255, 255, 255, 0.787);
+$text-color:rgba(255, 255, 255, 0.642);
+body{
+    background-color: $primary-color;
+}
+.form-container{
+    height: 400px;
+    width: 1100px;
+    background-color: $main-form;
+    margin-left: 120px;
+    margin-top: 140px;
+    border-radius: 20px;
+    text-align: right;
+}
+.form-color{
+    background-color: rgba(0, 0, 0, 0.672);
+    color: $text-color;
+}
+.form{
+    margin-right: 100px;
+    padding-top: 50px;
+    
+}
+.form-input{
+    height: 40px;
+    width: 200px;
+    margin-bottom: 20px;
+    border: none;
+}
+.text-input{
+    height: 150px;
+    width: 411px;
+    border: none;
+    
+}
+.mail{
+    width: 411px;
+}
