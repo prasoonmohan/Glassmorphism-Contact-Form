@@ -1,40 +1,213 @@
-$primary-color:rgba(0, 225, 255, 0.486);
-$main-form:rgba(17, 0, 255, 0.749);
-$sub-form:rgba(255, 255, 255, 0.787);
-$text-color:rgba(255, 255, 255, 0.642);
-body{
-    background-color: $primary-color;
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;600;700&display=swap");
+body {
+  background: url("https://cdn.pixabay.com/photo/2021/02/05/02/03/letter-5983138_960_720.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  font-family: "Inconsolata", monospace;
 }
-.form-container{
-    height: 400px;
-    width: 1100px;
-    background-color: $main-form;
-    margin-left: 120px;
-    margin-top: 140px;
+.padding {
+  padding-left: 7px;
+}
+.form-text-size {
+  font-size: 16px;
+}
+.glassmporphism {
+  background: rgba(250, 239, 239, 0.35);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.form-container {
+  margin-left: 130px;
+  height: 430px;
+  width: 1100px;
+  display: flex;
+
+  margin-top: 130px;
+  border-radius: 20px;
+
+  background: rgba(255, 0, 0, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+textarea:focus,
+input:focus {
+  outline: none;
+}
+.form-color {
+  font-weight: bold;
+}
+.form {
+  
+  margin-right: 100px;
+  padding-top: 40px;
+  color: black;
+}
+.form-input {
+  height: 40px;
+  width: 197px;
+  margin-bottom: 20px;
+  border: none;
+}
+.text-input {
+  height: 150px;
+  width: 411px;
+  border: none;
+}
+.form-name {
+  display: flex;
+}
+.mail {
+  width: 411px;
+}
+
+button {
+  margin-top: 15px;
+  font-size: 17px;
+  height: 40px;
+  width: 419px;
+  background-color: black;
+  color: black;
+}
+button:hover {
+  background: rgba(250, 239, 239, 0.55);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+// contact section
+.contact-section {
+  position: relative;
+  height: 350px;
+  margin-left: 80px;
+  margin-right: 80px;
+
+  padding-left: 65px;
+  padding-right: 80px;
+  transform: translatey(-70px);
+
+  background: rgba(255, 0, 0, 0.35);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+
+  h1 {
+  }
+  h1::after {
+    content: " ";
+    position: absolute;
+    height: 3px;
+    width: 95px;
+    background-color: rgb(0, 0, 0);
+    top: 57px;
+    left: 68px;
+  }
+  h1::before {
+    content: " ";
+    position: absolute;
+    height: 3px;
+    width: 55px;
+    background-color: rgb(0, 0, 0);
+    top: 65px;
+    left: 68px;
+  }
+  p {
+    margin-top: 40px;
+    font-weight: bold;
+    font-size: 18px;
+  }
+}
+
+.contact-social {
+  margin-top: 40px;
+  margin-left: 30px;
+  a {
+    font-size: 21px;
+    color: black;
+    margin-left: 7px;
+
+    &:hover {
+      color: white;
+      border-bottom: 1px white solid;
+    }
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  body {
+    background: url("https://cdn.pixabay.com/photo/2021/02/05/02/03/letter-5983138_960_720.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: "Inconsolata", monospace;
+    background-color: rgba(red, $alpha: 0.7);
+  }
+
+  .contact-section {
+    margin-left: 0;
+    max-width: 300px;
+    transform: translateY(-360px);
+    box-shadow: none;
+
+    p {
+      margin-top: 40px;
+      font-weight: bold;
+      font-size: 18px;
+    }
+  }
+
+  .form-container {
+    margin-left: 0px;
+    margin-top: 380px;
+    width: 342px;
+    display: flex;
+    box-shadow: none;
+
     border-radius: 20px;
-    text-align: right;
+  }
+
+  
+.form {
+  
+  margin-right:0px;
+  padding-top: 0px;
+  color: black;
 }
-.form-color{
-    background-color: rgba(0, 0, 0, 0.672);
-    color: $text-color;
+.form-input {
+  height: 0px;
+  width: 0px;
+  margin-bottom: 0px;
+  border: none;
 }
-.form{
-    margin-right: 100px;
-    padding-top: 50px;
-    
+.text-input {
+  height: 0px;
+  width: 0px;
+  border: none;
 }
-.form-input{
-    height: 40px;
-    width: 200px;
-    margin-bottom: 20px;
-    border: none;
+// .form-name {
+//   display: flex;
+// }
+// .mail {
+//   width: 411px;
+// }
+
+button {
+  margin-top: 15px;
+  font-size: 17px;
+  height: 40px;
+  width: 419px;
+  background-color: black;
+  color: black;
 }
-.text-input{
-    height: 150px;
-    width: 411px;
-    border: none;
-    
-}
-.mail{
-    width: 411px;
 }
