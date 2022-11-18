@@ -15,7 +15,7 @@
 
 [Live Link](https://prasoonmohan-contact-form.netlify.app/)
 
-## Preview 🚀...
+## Preview 📸...
 
 ![Screenshot](./assets/images/Preview.png)
 
